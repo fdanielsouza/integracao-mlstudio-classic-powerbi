@@ -22,3 +22,12 @@
     2. ![image](https://user-images.githubusercontent.com/43036486/110167599-bc435480-7dd4-11eb-9a9b-411ffad17e85.png)
 10. Adicione o módulo Score Model, você vai conectar o seu modelo treinado (a saída de Train Model) na esquerda e o seu dataset de teste na direita. A ideia é tentar prever os valores do dataset de teste. Em seguida, adicione o módulo Evaluate Model, é quem vai dar a "nota" do modelo. Assim você vai saber se funcionou ou não. Basta conectar a saída de Score Model na esquerda dele. Por último, clique em Run para rodar o experimento
 ![image](https://user-images.githubusercontent.com/43036486/110168248-aa15e600-7dd5-11eb-94d0-7d62fc67864f.png)
+11. Depois de rodar o modelo, clique em Setup Web Service (ao lado do botão Run) para que o Azure crie uma pipeline de inferência. É o que vai gerar um link (ou ponto de extremidade) que você pode usar passando seus dados para previsões futuras. Quando o Azure criar a pipeline de inferência, basta usar Run para rodar ela e em seguida Deploy Web Service
+![image](https://user-images.githubusercontent.com/43036486/110324206-706ef600-7ff4-11eb-993c-590b94099e3d.png)
+12. Com seu ponto de extremidade criado, você navega até ele usando o ícone do globo. Em seguida, clique em New Web Services Experience para obter os parâmetros necessários de forma mais direta. Os parâmetros que interessam são a Primary Key e o Request-Response. Copie e cole eles em um bloco de notas.
+    1. ![image](https://user-images.githubusercontent.com/43036486/110324858-5255c580-7ff5-11eb-9e2e-6130eaa38dbe.png)
+    2. ![image](https://user-images.githubusercontent.com/43036486/110325110-b24c6c00-7ff5-11eb-9891-5faa669460a2.png)
+    3. ![image](https://user-images.githubusercontent.com/43036486/110325174-c728ff80-7ff5-11eb-977f-09418dbf7e34.png)
+ 
+
+
